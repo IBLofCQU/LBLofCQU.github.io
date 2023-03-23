@@ -30,34 +30,107 @@
             padding: 20px;
             width: 100%;
         }
+
+        .card {
+            width: 300px;
+            margin: 0px auto;
+            background-color: white;
+            box-shadow: 0px 5px 20px #999;
+        }
+
+        .card a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .card:hover .card-image img {
+            width: 160%;
+            filter: grayscale(0);
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 15px 20px;
+            box-sizing: border-box;
+        }
+
+        .card-title, .card-excerpt {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .card-title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card-excerpt {
+            color: #777;
+        }
     </style>
 </head>
 <body>
 <h1>Python Package Index</h1>
 <section class="explanation">
+    <p>
+        以下第三方库托关于团队git 平台,使用方式见组织讨论区
+    </p>
 </section>
 <div class="package">
 
-    <div>
-        <a href="dc-rebar/">dc_rebar</a>: 约定钢筋格式,用于json 转换<br/>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <a href="dc-rebar/">dc_rebar</a><br/>
+            </div>
+            <div class="card-excerpt">
+                <p>约定钢筋格式,用于json 转换</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <a href="converter-dataclass/">converter_dataclass</a>: 基于dataclass 的扩展,用于提供强制类型转换<br/>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <a href="converter-dataclass/">converter_dataclass</a>
+            </div>
+            <div class="card-excerpt">
+                <p>基于dataclass的扩展,用于提供强制类型转换</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <a href="stair-structure/">stair_structure</a>: 楼梯结构计算相关<br/>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <a href="stair-structure/">stair_structure</a>
+            </div>
+            <div class="card-excerpt">
+                <p>楼梯结构计算相关</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <a href="stair-detailed/">stair_detailed</a>: 楼梯深化设计相关<br/>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <a href="stair-detailed/">stair_detailed</a>
+            </div>
+            <div class="card-excerpt">
+                <p>楼梯深化设计相关</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <a href="stair-rebar-layout/">stair_rebar_layout</a>: 楼梯钢筋排布<br/>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <a href="stair-rebar-layout/">stair_rebar_layout</a>
+            </div>
+            <div class="card-excerpt">
+                <p>楼梯钢筋排布</p>
+            </div>
+        </div>
     </div>
-
 
 </div>
 </body>
