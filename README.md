@@ -8,3 +8,5 @@
 ```shell
 pip install package-name --extra-index-url https://iblofcqu.github.io
 ```
+
+亦或者可以通过全局配置使用 `extra-index-url`
